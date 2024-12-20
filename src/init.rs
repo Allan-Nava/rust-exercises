@@ -1,4 +1,3 @@
-
 use anyhow::{bail, Context, Result};
 use crossterm::{
     style::{Attribute, Color, ResetColor, SetAttribute, SetForegroundColor},
