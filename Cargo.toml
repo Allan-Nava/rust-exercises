@@ -6,7 +6,7 @@ exclude = [
 ]
 
 [workspace.package]
-version = "1.0.0"
+version = "6.4.0"
 authors = [
 ]
 repository = "https://github.com/Allan-Nava/rust-exercises"
