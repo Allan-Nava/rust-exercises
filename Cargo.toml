@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+exclude = [
+  "tests/test_exercises",
+  "dev",
+]
+
+[workspace.package]
+version = "1.0.0"
+authors = [
+]
+repository = "https://github.com/Allan-Nava/rust-exercises"
+license = "MIT"
+edition = "2021" # On Update: Update the edition of the `rustfmt` command that checks the solutions.
+rust-version = "1.80"
+
+
+[dependencies]
+anyhow = "1.0.94"
+clap = { version = "4.5.23", features = ["derive"] }
+crossterm = { version = "0.28.1", default-features = false, features = ["windows", "events"] }
+notify = "7.0.0"
+os_pipe = "1.2.1"
+rustlings-macros = { path = "rustlings-macros", version = "=6.4.0" }
+serde_json = "1.0.133"
+serde.workspace = true
+toml_edit.workspace = true
