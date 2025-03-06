@@ -54,7 +54,7 @@ toml_edit.workspace = true
 
 
 [target.'cfg(not(windows))'.dependencies]
-rustix = { version = "0.38.42", default-features = false, features = ["std", "stdio", "termios"] }
+rustix = { version = "1.0.0", default-features = false, features = ["std", "stdio", "termios"] }
 
 [dev-dependencies]
 tempfile = "3.14.0"
