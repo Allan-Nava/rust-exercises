@@ -16,7 +16,7 @@ rust-version = "1.80"
 
 [workspace.dependencies]
 serde = { version = "1.0.215", features = ["derive"] }
-toml_edit = { version = "0.22.22", default-features = false, features = ["parse", "serde"] }
+toml_edit = { version = "0.25.0", default-features = false, features = ["parse", "serde"] }
 
 [package]
 name = "rustlings"
