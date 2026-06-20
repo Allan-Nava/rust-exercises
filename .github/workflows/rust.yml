@@ -13,12 +13,12 @@ jobs:
   clippy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: cargo clippy -- --deny warnings
   fmt:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: "exercises/**/*.md"
@@ -30,14 +30,14 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: swatinem/rust-cache@v2
       - name: Run cargo test
         run: cargo test --workspace
   dev-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: swatinem/rust-cache@v2
       - name: Run rustlings dev check
         run: cargo run -- dev check --require-solutions
